@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".Tutorial">
+
+    <ImageView
+        android:id="@+id/rain2"
+        android:layout_width="416dp"
+        android:layout_height="311dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="89dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cloud2"
+        app:srcCompat="@drawable/tutorialrain" />
+
+    <ImageView
+        android:id="@+id/rain"
+        android:layout_width="428dp"
+        android:layout_height="309dp"
+        android:layout_marginStart="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cloud"
+        app:srcCompat="@drawable/tutorialrain" />
+
+    <ImageView
+        android:id="@+id/thunderyellow"
+        android:layout_width="64dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="200dp"
+        android:onClick="thunder"
+        app:layout_constraintStart_toStartOf="@+id/rain"
+        app:layout_constraintTop_toTopOf="@+id/cloud"
+        app:srcCompat="@drawable/thunderyellow" />
+
+    <ImageView
+        android:id="@+id/cloud"
+        android:layout_width="544dp"
+        android:layout_height="265dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tutorialcloud" />
+
+    <ImageView
+        android:id="@+id/cloud3"
+        android:layout_width="484dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="236dp"
+        android:rotation="195"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tutorialcloud" />
+
+    <ImageView
+        android:id="@+id/cloud2"
+        android:layout_width="419dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="216dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tutorialcloud" />
+
+    <ImageView
+        android:id="@+id/rain3"
+        android:layout_width="428dp"
+        android:layout_height="309dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="107dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cloud3"
+        app:srcCompat="@drawable/tutorialrain" />
+
+    <ImageView
+        android:id="@+id/thundergreen"
+        android:layout_width="53dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="@+id/rain"
+        app:layout_constraintTop_toTopOf="@+id/rain"
+        app:srcCompat="@drawable/turotialthunder" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="64dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/numItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thunderyellow" />
+
+    <TextView
+        android:id="@+id/numItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/barrio"
+        android:text="0/1"
+        android:textColor=" #D5CA3C"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/hand"
+        android:layout_width="177dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="105dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rain"
+        app:layout_constraintStart_toStartOf="@+id/rain"
+        app:srcCompat="@drawable/tutorialhand" />
+
+    <ImageButton
+        android:id="@+id/instruction1_bg"
+        android:layout_width="700dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="8dp"
+        android:alpha=".25"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/reset"
+        app:layout_constraintEnd_toStartOf="@+id/reset"
+        app:layout_constraintStart_toEndOf="@+id/numItem"
+        app:layout_constraintTop_toTopOf="@+id/reset"
+        app:srcCompat="@drawable/gradient_button" />
+
+    <TextView
+        android:id="@+id/instruction1"
+        android:layout_width="700dp"
+        android:layout_height="75dp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFF56D"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/instruction1_bg"
+        app:layout_constraintEnd_toEndOf="@+id/instruction1_bg"
+        app:layout_constraintStart_toStartOf="@+id/instruction1_bg"
+        app:layout_constraintTop_toTopOf="@+id/instruction1_bg" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint=" #D5CA3C"
+        android:clickable="true"
+        android:onClick="reset"
+        app:backgroundTint="#635F5F"
+        app:layout_constraintBottom_toBottomOf="@+id/t_home"
+        app:layout_constraintEnd_toStartOf="@+id/t_home"
+        app:layout_constraintStart_toEndOf="@+id/instruction1_bg"
+        app:layout_constraintTop_toTopOf="@+id/t_home"
+        app:maxImageSize="40dp"
+        app:srcCompat="@android:drawable/ic_menu_rotate" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/t_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#FFBDE6"
+        android:clickable="true"
+        android:onClick="home"
+        app:backgroundTint="#635F5F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reset"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="40dp"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="144dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/numItem"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

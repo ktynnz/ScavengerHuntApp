@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/shape_bg2"
+        android:layout_width="1656dp"
+        android:layout_height="957dp"
+        android:alpha=".15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491"
+        app:srcCompat="@drawable/shapes" />
+
+    <TextView
+        android:id="@+id/s_scavenger2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="235dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/bahianita"
+        android:letterSpacing="0.025"
+        android:text=" SCAVENGER "
+        android:textAlignment="center"
+        android:textColor="#D5FBCA36"
+        android:textSize="250sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/s_scavenger6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/bahianita"
+        android:letterSpacing="0.025"
+        android:text=" SCAVENGER "
+        android:textAlignment="center"
+        android:textColor="#C693700A"
+        android:textSize="250sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/barriecito"
+        android:rotation="-15"
+        android:shadowColor="#000000"
+        android:text="H"
+        android:textColor="#FD5959"
+        android:textSize="220dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/s_scavenger2"
+        app:layout_constraintTop_toTopOf="@+id/s_scavenger2" />
+
+    <TextView
+        android:id="@+id/u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/barriecito"
+        android:rotation="10"
+        android:shadowColor="#000000"
+        android:text="U"
+        android:textColor="#F9C6DF"
+        android:textSize="220dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/h"
+        app:layout_constraintTop_toTopOf="@+id/s_scavenger2" />
+
+    <TextView
+        android:id="@+id/n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/barriecito"
+        android:shadowColor="#000000"
+        android:text="N"
+        android:textColor="#FCFF82"
+        android:textSize="220dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/u"
+        app:layout_constraintTop_toTopOf="@+id/s_scavenger2" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/barriecito"
+        android:rotation="-10"
+        android:shadowColor="#000000"
+        android:text="T"
+        android:textColor="#AFC5FF"
+        android:textSize="220dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/s_scavenger2"
+        app:layout_constraintStart_toEndOf="@+id/n"
+        app:layout_constraintTop_toTopOf="@+id/s_scavenger2" />
+
+    <ImageView
+        android:id="@+id/navbg"
+        android:layout_width="577dp"
+        android:layout_height="1282dp"
+        android:alpha="0.85"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/navbg" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#00FFFFFF"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gradient_rect" />
+
+    <Button
+        android:id="@+id/startGame"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#A6CE49BF"
+        android:fontFamily="@font/bahiana"
+        android:onClick="start"
+        android:text="Start Game"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/learn"
+        app:layout_constraintEnd_toStartOf="@+id/learn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/learn"
+        app:strokeColor="#A6CE49BF"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/timelife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/barriecito"
+        android:text="00:00"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/timelife"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/timelife"
+        app:layout_constraintVertical_bias="0.509"
+        app:srcCompat="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/barrio"
+        android:text="5"
+        android:textColor="#FADFE8"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/learn"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#A63698E6"
+        android:fontFamily="@font/bahiana"
+        android:onClick="learn"
+        android:text="LEARN"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startGame"
+        app:strokeColor="#A64D7697"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addlife"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="221dp"
+        android:layout_marginTop="10dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#D6E6B9"
+        android:clickable="true"
+        android:onClick="addlife"
+        app:backgroundTint="#5E5858"
+        app:fabCustomSize="50dp"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4"
+        app:maxImageSize="40dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageButton
+        android:id="@+id/h_settings"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="settings"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <Button
+        android:id="@+id/h_contact"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="164dp"
+        android:fontFamily="@font/bahiana"
+        android:onClick="contact"
+        android:text="CONTACT"
+        android:textSize="60sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/navbg"
+        app:layout_constraintStart_toStartOf="@+id/navbg"
+        app:layout_constraintTop_toBottomOf="@+id/h_about"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/h_about"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="313dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="@font/bahiana"
+        android:onClick="about"
+        android:text="ABOUT"
+        android:textSize="60sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/h_contact"
+        app:layout_constraintEnd_toEndOf="@+id/navbg"
+        app:layout_constraintStart_toStartOf="@+id/navbg"
+        app:layout_constraintTop_toTopOf="@+id/navbg"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/h_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF6F69AC"
+        android:clickable="true"
+        android:onClick="exit"
+        app:backgroundTint="#FF6F69AC"
+        app:layout_constraintBottom_toBottomOf="@+id/h_settings"
+        app:layout_constraintEnd_toEndOf="@+id/h_settings"
+        app:layout_constraintStart_toStartOf="@+id/h_settings"
+        app:layout_constraintTop_toTopOf="@+id/h_settings"
+        app:maxImageSize="40dp"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

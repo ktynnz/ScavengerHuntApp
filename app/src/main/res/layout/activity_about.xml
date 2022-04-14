@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E0F8"
+    tools:context=".About">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/a_exit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
+        android:clickable="true"
+        android:onClick="exit"
+        app:backgroundTint="#6F69AC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="40dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/bahiana"
+        android:shadowColor="#17475A"
+        android:text="facebook"
+        android:textColor="#3C285E"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_fb"
+        app:layout_constraintEnd_toStartOf="@+id/img_fb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_fb"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <ImageButton
+        android:id="@+id/img_fb"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="fb"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/img_ig"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:srcCompat="@drawable/fbicons" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:alpha=".85"
+        android:fontFamily="@font/barrio"
+        android:text="ABOUT"
+        android:textColor="#3A3571"
+        android:textSize="150dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/barrio"
+        android:text="ABOUT"
+        android:textColor="#6F69AC"
+        android:textSize="150dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="750dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="32dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textAbout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#40FFC107"
+                android:fontFamily="@font/barriecito"
+                android:text="THIS IS MY ANDROID DEV PROJECT"
+                android:textAlignment="center"
+                android:textColor="#7753B3"
+                android:textSize="34sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/img_mail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="email"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="@+id/img_ig"
+        app:layout_constraintTop_toBottomOf="@+id/img_ig"
+        app:srcCompat="@drawable/contact" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/bahiana"
+        android:shadowColor="#17475A"
+        android:text="contact"
+        android:textColor="#3C285E"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_mail"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/img_mail"
+        app:layout_constraintTop_toTopOf="@+id/img_mail" />
+
+    <ImageButton
+        android:id="@+id/img_git"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="git"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/img_fb"
+        app:layout_constraintTop_toBottomOf="@+id/img_fb"
+        app:srcCompat="@drawable/github" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/bahiana"
+        android:shadowColor="#17475A"
+        android:text="GitHub"
+        android:textColor="#3C285E"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_git"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/img_git" />
+
+    <ImageButton
+        android:id="@+id/img_ig"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="ig"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/img_fb"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:srcCompat="@drawable/icons" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/bahiana"
+        android:shadowColor="#17475A"
+        android:text="Instagram"
+        android:textColor="#3C285E"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_ig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_ig"
+        app:layout_constraintTop_toTopOf="@+id/img_ig" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

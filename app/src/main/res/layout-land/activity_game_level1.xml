@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gamebg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameLevel1">
+
+    <ImageView
+        android:id="@+id/circle5"
+        android:layout_width="181dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/rainbow4"
+        app:layout_constraintTop_toTopOf="@+id/rainbow4"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="117dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="191dp"
+        android:layout_marginBottom="113dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintStart_toStartOf="@+id/monsters"
+        app:srcCompat="@drawable/round2" />
+
+    <ImageView
+        android:id="@+id/flower3"
+        android:layout_width="552dp"
+        android:layout_height="411dp"
+        android:layout_marginEnd="576dp"
+        android:layout_marginBottom="388dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintEnd_toEndOf="@+id/monsters"
+        app:srcCompat="@drawable/flower1" />
+
+    <ImageView
+        android:id="@+id/rainbow4"
+        android:layout_width="942dp"
+        android:layout_height="396dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="404dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintStart_toStartOf="@+id/monsters"
+        app:srcCompat="@drawable/rainbow3" />
+
+    <ImageView
+        android:id="@+id/graymonears"
+        android:layout_width="155dp"
+        android:layout_height="184dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters1"
+        app:layout_constraintEnd_toEndOf="@+id/monsters1"
+        app:srcCompat="@drawable/graymonears" />
+
+    <ImageView
+        android:id="@+id/orangeteethcover"
+        android:layout_width="84dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="169dp"
+        app:layout_constraintStart_toStartOf="@+id/orangemon"
+        app:layout_constraintTop_toTopOf="@+id/orangemon"
+        app:srcCompat="@drawable/gradient_storm1" />
+
+    <ImageView
+        android:id="@+id/orangemon"
+        android:layout_width="246dp"
+        android:layout_height="349dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginBottom="423dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintStart_toStartOf="@+id/monsters"
+        app:srcCompat="@drawable/orangemon" />
+
+    <ImageView
+        android:id="@+id/orangemoneyes"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="@+id/orangemon"
+        app:layout_constraintEnd_toEndOf="@+id/orangemon"
+        app:layout_constraintStart_toStartOf="@+id/orangemon"
+        app:layout_constraintTop_toTopOf="@+id/orangemon"
+        app:srcCompat="@drawable/orangemoneye" />
+
+    <ImageView
+        android:id="@+id/dinohair"
+        android:layout_width="130dp"
+        android:layout_height="177dp"
+        android:layout_marginEnd="132dp"
+        app:layout_constraintEnd_toEndOf="@+id/dino"
+        app:layout_constraintTop_toTopOf="@+id/dino"
+        app:srcCompat="@drawable/dino2" />
+
+    <ImageView
+        android:id="@+id/dino"
+        android:layout_width="228dp"
+        android:layout_height="328dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="336dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters1"
+        app:layout_constraintStart_toStartOf="@+id/orangemon"
+        app:srcCompat="@drawable/dino" />
+
+    <ImageView
+        android:id="@+id/dinoeyes"
+        android:layout_width="47dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="81dp"
+        app:layout_constraintEnd_toEndOf="@+id/dino"
+        app:layout_constraintTop_toTopOf="@+id/dino"
+        app:srcCompat="@drawable/dinoeye" />
+
+    <ImageView
+        android:id="@+id/flower2"
+        android:layout_width="392dp"
+        android:layout_height="529dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="234dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintEnd_toEndOf="@+id/monsters"
+        app:srcCompat="@drawable/flower3" />
+
+    <ImageView
+        android:id="@+id/circle3"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintStart_toStartOf="@+id/monsters1"
+        app:layout_constraintTop_toTopOf="@+id/monsters1"
+        app:srcCompat="@drawable/circle3" />
+
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circle3"
+        app:layout_constraintEnd_toEndOf="@+id/circle3"
+        app:layout_constraintStart_toStartOf="@+id/circle3"
+        app:layout_constraintTop_toTopOf="@+id/circle3"
+        app:srcCompat="@drawable/circle2" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circle2"
+        app:layout_constraintEnd_toEndOf="@+id/circle2"
+        app:layout_constraintStart_toStartOf="@+id/circle2"
+        app:layout_constraintTop_toTopOf="@+id/circle2"
+        app:srcCompat="@drawable/circle1" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circle1"
+        app:layout_constraintEnd_toEndOf="@+id/circle1"
+        app:layout_constraintStart_toStartOf="@+id/circle1"
+        app:layout_constraintTop_toTopOf="@+id/circle1"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/brownmonear1"
+        android:layout_width="80dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginBottom="340dp"
+        app:layout_constraintBottom_toBottomOf="@+id/brownmon"
+        app:layout_constraintStart_toStartOf="@+id/brownmon"
+        app:srcCompat="@drawable/brownmonear1" />
+
+    <ImageView
+        android:id="@+id/brownmonear2"
+        android:layout_width="80dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="228dp"
+        app:layout_constraintEnd_toEndOf="@+id/brownmon"
+        app:layout_constraintTop_toTopOf="@+id/brownmon"
+        app:srcCompat="@drawable/brownmonear2" />
+
+    <ImageView
+        android:id="@+id/brownmon"
+        android:layout_width="267dp"
+        android:layout_height="461dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="348dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintEnd_toEndOf="@+id/monsters"
+        app:srcCompat="@drawable/brownmon" />
+
+    <ImageView
+        android:id="@+id/item2"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="244dp"
+        app:layout_constraintStart_toStartOf="@+id/monsters"
+        app:layout_constraintTop_toTopOf="@+id/monsters"
+        app:srcCompat="@drawable/item2" />
+
+    <ImageView
+        android:id="@+id/flower1"
+        android:layout_width="259dp"
+        android:layout_height="313dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintEnd_toEndOf="@+id/monsters1"
+        app:srcCompat="@drawable/flower1" />
+
+    <ImageView
+        android:id="@+id/round"
+        android:layout_width="187dp"
+        android:layout_height="181dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="155dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters1"
+        app:layout_constraintEnd_toEndOf="@+id/monsters1"
+        app:srcCompat="@drawable/round" />
+
+    <ImageView
+        android:id="@+id/round1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="@+id/round"
+        app:layout_constraintEnd_toEndOf="@+id/round"
+        app:layout_constraintStart_toStartOf="@+id/round"
+        app:layout_constraintTop_toTopOf="@+id/round"
+        app:srcCompat="@drawable/round1" />
+
+    <ImageView
+        android:id="@+id/round2"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="@+id/round1"
+        app:layout_constraintEnd_toEndOf="@+id/round1"
+        app:layout_constraintStart_toStartOf="@+id/round1"
+        app:layout_constraintTop_toTopOf="@+id/round1"
+        app:srcCompat="@drawable/round2" />
+
+    <ImageView
+        android:id="@+id/monsters1"
+        android:layout_width="923dp"
+        android:layout_height="473dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="122dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintEnd_toEndOf="@+id/monsters"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/monsters"
+        app:layout_constraintTop_toTopOf="@+id/monsters"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/monsters2" />
+
+    <ImageView
+        android:id="@+id/cactusmon"
+        android:layout_width="295dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="@+id/monsters1"
+        app:layout_constraintTop_toTopOf="@+id/monsters1"
+        app:srcCompat="@drawable/cactusmon" />
+
+    <ImageView
+        android:id="@+id/monsters"
+        android:layout_width="1086dp"
+        android:layout_height="672dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/monsters" />
+
+    <ImageView
+        android:id="@+id/cactusmoneye"
+        android:layout_width="75dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="248dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cactusmon"
+        app:layout_constraintEnd_toEndOf="@+id/cactusmon"
+        app:layout_constraintStart_toStartOf="@+id/cactusmon"
+        app:layout_constraintTop_toTopOf="@+id/cactusmon"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cactuseye" />
+
+    <ImageView
+        android:id="@+id/plant"
+        android:layout_width="173dp"
+        android:layout_height="324dp"
+        android:layout_marginStart="371dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters1"
+        app:layout_constraintStart_toStartOf="@+id/monsters1"
+        app:srcCompat="@drawable/plant" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/barrio"
+        android:text="LEVEL 1"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintEnd_toEndOf="@+id/monsters" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <Button
+        android:id="@+id/restartBtn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="404dp"
+        android:backgroundTint="#6F69AC"
+        android:fontFamily="@font/bahiana"
+        android:text="Restart"
+        android:textSize="60sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/game_navbar"
+        app:layout_constraintEnd_toEndOf="@+id/game_navbar"
+        app:layout_constraintTop_toTopOf="@+id/game_navbar"
+        app:strokeColor="#000000"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="449dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="380dp"
+        android:backgroundTint="#1C7947"
+        android:fontFamily="@font/bahiana"
+        android:text="Home"
+        android:textSize="60sp"
+        android:visibility="visible"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/game_navbar"
+        app:layout_constraintEnd_toStartOf="@+id/restartBtn"
+        app:layout_constraintTop_toTopOf="@+id/game_navbar"
+        app:strokeColor="#000000"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/resumeBtn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="449dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="380dp"
+        android:backgroundTint="#FF865E"
+        android:fontFamily="@font/bahiana"
+        android:text="resume"
+        android:textSize="60sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/game_navbar"
+        app:layout_constraintEnd_toStartOf="@+id/homeBtn"
+        app:layout_constraintStart_toStartOf="@+id/game_navbar"
+        app:layout_constraintTop_toTopOf="@+id/game_navbar"
+        app:strokeColor="#000000"
+        app:strokeWidth="3dp" />
+
+    <ImageView
+        android:id="@+id/item3"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="169dp"
+        app:layout_constraintStart_toStartOf="@+id/monsters"
+        app:layout_constraintTop_toTopOf="@+id/monsters"
+        app:srcCompat="@drawable/item3" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="197dp"
+        android:layout_height="343dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintEnd_toEndOf="@+id/monsters"
+        app:srcCompat="@drawable/stars" />
+
+    <ImageView
+        android:id="@+id/thunder"
+        android:layout_width="54dp"
+        android:layout_height="174dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="264dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintEnd_toEndOf="@+id/monsters"
+        app:srcCompat="@drawable/thunderyellow" />
+
+    <ImageView
+        android:id="@+id/item1"
+        android:layout_width="65dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="507dp"
+        android:layout_marginBottom="184dp"
+        app:layout_constraintBottom_toBottomOf="@+id/monsters"
+        app:layout_constraintEnd_toEndOf="@+id/monsters"
+        app:srcCompat="@drawable/item1" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="36dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_thunder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeRemaining"
+        app:srcCompat="@drawable/thunderyellow" />
+
+    <TextView
+        android:id="@+id/txt_thunder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/barriecito"
+        android:text="0/1"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_item1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@drawable/item1" />
+
+    <TextView
+        android:id="@+id/txt_item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/barriecito"
+        android:text="0/1"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_item2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@drawable/item2" />
+
+    <TextView
+        android:id="@+id/txt_item2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/barriecito"
+        android:text="0/1"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_item3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@drawable/item3" />
+
+    <TextView
+        android:id="@+id/txt_item3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/barriecito"
+        android:text="0/1"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/game_navbar"
+        android:layout_width="1292dp"
+        android:layout_height="928dp"
+        android:alpha="0.980"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/navbg" />
+
+    <TextView
+        android:id="@+id/timeRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/barriecito"
+        android:text="00:00"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/s_bglayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_splash"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/s_shapebg"
+        android:layout_width="1327dp"
+        android:layout_height="906dp"
+        android:layout_marginEnd="612dp"
+        android:alpha="0.25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shapes" />
+
+    <TextView
+        android:id="@+id/s_scavenger3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="235dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/bahianita"
+        android:letterSpacing="0.025"
+        android:text=" SCAVENGER "
+        android:textAlignment="center"
+        android:textColor="#D5F3C94A"
+        android:textSize="250sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/s_scavenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="235dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/bahianita"
+        android:letterSpacing="0.025"
+        android:text=" SCAVENGER "
+        android:textAlignment="center"
+        android:textColor="#C693700A"
+        android:textSize="250sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <TextView
+        android:id="@+id/T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/barriecito"
+        android:rotation="-10"
+        android:shadowColor="#000000"
+        android:text="T"
+        android:textColor="#AFC5FF"
+        android:textSize="220dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/s_scavenger"
+        app:layout_constraintStart_toEndOf="@+id/N"
+        app:layout_constraintTop_toTopOf="@+id/s_scavenger" />
+
+    <TextView
+        android:id="@+id/U"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="145dp"
+        android:fontFamily="@font/barriecito"
+        android:rotation="10"
+        android:shadowColor="#000000"
+        android:text="U"
+        android:textColor="#F9C6DF"
+        android:textSize="220dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/H"
+        app:layout_constraintTop_toTopOf="@+id/s_scavenger" />
+
+    <TextView
+        android:id="@+id/N"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/barriecito"
+        android:shadowColor="#000000"
+        android:text="N"
+        android:textColor="#FCFF82"
+        android:textSize="220dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/U"
+        app:layout_constraintTop_toTopOf="@+id/s_scavenger" />
+
+    <TextView
+        android:id="@+id/H"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/barriecito"
+        android:rotation="-15"
+        android:shadowColor="#000000"
+        android:text="H"
+        android:textColor="#FD5959"
+        android:textSize="220dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/s_scavenger"
+        app:layout_constraintTop_toTopOf="@+id/s_scavenger" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

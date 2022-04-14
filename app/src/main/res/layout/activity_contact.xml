@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/c_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCBACC"
+    tools:context=".Contact">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:fontFamily="@font/barrio"
+        android:text="SUPPORT"
+        android:textAlignment="center"
+        android:textColor="#81A8A3"
+        android:textSize="150sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/barrio"
+        android:text="SUPPORT"
+        android:textAlignment="center"
+        android:textColor="#BBFAF2"
+        android:textSize="150sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtFullName"
+        android:layout_width="600dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:background="#346C4F5F"
+        android:ems="10"
+        android:fontFamily="@font/bahianita"
+        android:hint="Full name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#8B659E"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="600dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:background="#346C4F5F"
+        android:ems="10"
+        android:fontFamily="@font/bahianita"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#8B659E"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFullName" />
+
+    <EditText
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="600dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:background="#346C4F5F"
+        android:ems="10"
+        android:fontFamily="@font/bahianita"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="#8B659E"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="32dp"
+        android:background="#346C4F5F"
+        android:ems="10"
+        android:fontFamily="@font/bahianita"
+        android:gravity="start|top"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:textColor="#8B659E"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhoneNumber" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="64dp"
+        android:backgroundTint="#BBFAF2"
+        android:fontFamily="@font/barrio"
+        android:onClick="send"
+        android:text="SEND"
+        android:textColor="#DCBACC"
+        android:textSize="60sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMessage" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/c_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="68dp"
+        android:clickable="true"
+        android:onClick="exit"
+        app:backgroundTint="#BBFAF2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maxImageSize="40dp"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
